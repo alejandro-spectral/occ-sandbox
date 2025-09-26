@@ -2,5 +2,14 @@
     "name": "occ-sandbox",
     "build": { "dockerfile": "Dockerfile" },
     "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
     "postCreateCommand": "cmake -S . -B build && cmake --build build"
 }
