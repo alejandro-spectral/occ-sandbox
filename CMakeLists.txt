@@ -18,4 +18,5 @@ target_link_libraries(occ-sandbox PRIVATE
     TKSTEP209
     TKXSBase
     TKIGES
+    TKBO
 )
