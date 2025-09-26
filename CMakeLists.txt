@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(occ-sandbox)
+find_package(OpenCASCADE REQUIRED)
+add_executable(occ-sandbox Main.cpp)
+target_link_libraries(occ-sandbox PRIVATE ${OpenCASCADE_LIBRARIES})
+target_include_directories(occ-sandbox PRIVATE ${OpenCASCADE_INCLUDE_DIRS})

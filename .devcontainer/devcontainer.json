@@ -1,0 +1,6 @@
+{
+    "name": "occ-sandbox",
+    "build": { "dockerfile": "Dockerfile" },
+    "features": {},
+    "postCreateCommand": "cmake -S . -B build && cmake --build build"
+}
