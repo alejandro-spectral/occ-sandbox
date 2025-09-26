@@ -1,6 +1,21 @@
 cmake_minimum_required(VERSION 3.10)
 project(occ-sandbox)
-find_package(OpenCASCADE REQUIRED)
 add_executable(occ-sandbox Main.cpp)
-target_link_libraries(occ-sandbox PRIVATE ${OpenCASCADE_LIBRARIES})
-target_include_directories(occ-sandbox PRIVATE ${OpenCASCADE_INCLUDE_DIRS})
+target_include_directories(occ-sandbox PRIVATE /usr/include/opencascade)
+target_link_libraries(occ-sandbox PRIVATE 
+    TKernel
+    TKMath
+    TKG2d
+    TKG3d
+    TKGeomBase
+    TKGeomAlgo
+    TKBRep
+    TKTopAlgo
+    TKPrim
+    TKShHealing
+    TKSTEP
+    TKSTEPAttr
+    TKSTEP209
+    TKXSBase
+    TKIGES
+)
